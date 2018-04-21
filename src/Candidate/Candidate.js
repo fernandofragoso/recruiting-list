@@ -21,6 +21,7 @@ class Candidate extends Component {
         </section>
         <section className="Candidate__right">
           <CandidateActions 
+            favorite={this.props.candidate.favorite}
             onFavoriteClick={() => this.props.onFavorite()}
             onRemoveClick={() => this.props.onRemove()} />
         </section>

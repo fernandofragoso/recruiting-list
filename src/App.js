@@ -52,7 +52,7 @@ class App extends Component {
   }
 
   _remove(id) {
-    //Remove candidates
+    //Remove candidate
     fetch(`${this.url}${id}`, {
       method: 'DELETE'
     }).then(res => res.json())
@@ -72,7 +72,39 @@ class App extends Component {
   }
 
   _favorite(id) {
-    alert(id);
+
+    let candidate = this.state.candidates.find(candidate => {
+      return (candidate.id === id);
+    });
+    let favorite = (candidate.favorite) ? false : true;
+    candidate.favorite = favorite;
+    
+    //update candidate
+    fetch(`${this.url}${id}`, {
+      method: 'PUT',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(candidate)
+    }).then(res => res.json())
+    .then(response => {
+      //update state
+      this.setState(prevState => {
+        return {
+          candidates: prevState.candidates.map(candidate => {
+            if (candidate.id === id) {
+              candidate.favorite = favorite;
+            }
+            return candidate;
+          })
+        }
+      });
+    })
+    .catch(error => {
+      console.log(error);
+    });
+    
   }
 }
 
