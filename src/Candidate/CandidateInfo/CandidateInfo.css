@@ -1,0 +1,22 @@
+.CandidateInfo {
+  
+}
+
+.CandidateInfo__pill {
+  border: 1px solid #000;
+  border-radius: 15px;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.CandidateInfo__pill--new {
+  color: #E9544E;
+  border: 1px solid #E9544E;
+  margin: 0 10px;
+}
+
+.CandidateInfo__pill--skill {
+  border: 1px solid #E5E5E5;
+  background-color: #F1F2F4;
+  margin: 0 2px;
+}
