@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Candidate from './Candidate/Candidate';
+
 class App extends Component {
   
   constructor() {
@@ -27,16 +29,20 @@ class App extends Component {
   }
   
   render() {
+    const list = this.state.candidates.map(candidate => {
+      return <Candidate key={candidate.id} candidate={candidate} />
+    });
     return (
       <div className="App">
-        <ul>
-          {this.state.candidates.map(candidate => <li key={candidate.id}>{candidate.name}</li>)}
-        </ul>
+        {list}
       </div>
     );
   }
 
   _setCandidates(candidates) {
+    const sortedCandidates = candidates.sort((a, b) => {
+      return (a.name.toUpperCase() >= b.name.toUpperCase()) ? 1 : -1;
+    });
     this.setState({
       candidates: candidates
     });

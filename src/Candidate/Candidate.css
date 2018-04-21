@@ -1,0 +1,33 @@
+.Candidate {
+  display: flex;
+  border: 1px solid #CCC;
+  margin: 10px;
+  padding: 10px;
+}
+
+.Candidate__left {
+  flex-basis: 150px;
+  margin: 10px 0 0 10px;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.Candidate__center {
+  flex-grow: 1;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.Candidate__right {
+  margin: 10px 10px 0 0;
+  flex-basis: 100px;
+  flex-shrink: 0;
+  display: flex;
+  text-align: right;
+}
+
+.Candidate__image {
+  object-fit: cover;
+  width:120px;
+  height:120px;
+}
