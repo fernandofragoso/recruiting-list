@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Candidate.css';
 
 import CandidateInfo from './CandidateInfo/CandidateInfo';
+import CandidateActions from './CandidateActions/CandidateActions';
 
 class Candidate extends Component {
   
@@ -19,11 +20,14 @@ class Candidate extends Component {
           <CandidateInfo candidate={this.props.candidate} />
         </section>
         <section className="Candidate__right">
+          <CandidateActions 
+            onFavoriteClick={() => this.props.onFavorite()}
+            onRemoveClick={() => this.props.onRemove()} />
         </section>
-        
       </div>
     );
   }
+
 }
 
 export default Candidate;

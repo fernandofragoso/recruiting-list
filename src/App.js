@@ -5,6 +5,8 @@ import Candidate from './Candidate/Candidate';
 
 class App extends Component {
   
+  url = "http://localhost:3000/candidates/";
+
   constructor() {
     super();
     this.state = {
@@ -13,11 +15,8 @@ class App extends Component {
   }
 
   componentWillMount() {
-    //API URL
-    const url = "http://localhost:3000/candidates/";
-
     //fetch candidates
-    fetch(url, {
+    fetch(this.url, {
       method: 'GET'
     }).then(res => res.json())
     .then(response => {
@@ -30,7 +29,11 @@ class App extends Component {
   
   render() {
     const list = this.state.candidates.map(candidate => {
-      return <Candidate key={candidate.id} candidate={candidate} />
+      return <Candidate 
+        key={candidate.id} 
+        candidate={candidate} 
+        onRemove={() => this._remove(candidate.id)}
+        onFavorite={() => this._favorite(candidate.id)} />
     });
     return (
       <div className="App">
@@ -46,6 +49,30 @@ class App extends Component {
     this.setState({
       candidates: candidates
     });
+  }
+
+  _remove(id) {
+    //Remove candidates
+    fetch(`${this.url}${id}`, {
+      method: 'DELETE'
+    }).then(res => res.json())
+    .then(response => {
+      //Remove from state
+      this.setState(prevState => {
+        return {
+          candidates: prevState.candidates.filter(candidate => {
+            return (candidate.id !== id)
+          })
+        }
+      })
+    })
+    .catch(error => {
+      console.log(error);
+    });
+  }
+
+  _favorite(id) {
+    alert(id);
   }
 }
 

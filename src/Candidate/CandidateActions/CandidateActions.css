@@ -1,0 +1,43 @@
+.CandidateActions {
+  display: flex;
+}
+
+.CandidateActions__button {
+  text-align: center;
+  border: 1px solid #CCC !important; 
+  cursor:pointer;
+  border:none;
+  width:40px;
+  height:30px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  outline: 0;
+}
+
+.CandidateActions__button:hover {
+  background: #F1F2F4;
+}
+
+.CandidateActions__button--popover {
+  width:200px;
+  justify-content: flex-start;
+}
+
+.CandidateActions__popover-wrapper {
+  position: relative;
+}
+
+.CandidateActions__popover-button {
+  display: none;
+  position: absolute;
+  top: 30px;
+  width: 200px;
+  right: 10px;
+  transition: display 1s;
+}
+
+.CandidateActions__popover-button--visible {
+  display: block;
+  transition: all 1s;
+}
