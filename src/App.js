@@ -37,7 +37,9 @@ class App extends Component {
     });
     return (
       <div className="App">
-        {list}
+        <div className="container">
+          {list}
+        </div>
       </div>
     );
   }
