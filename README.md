@@ -1,12 +1,38 @@
-In the project directory, you can run:
+# recruitinglist
+>React / ES6 / HTML / CSS
 
-### `npm start`
+### Instructions
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3001](http://localhost:3001) to view it in the browser.
+1. Clone this repository.
 
-### `npm test`
+2. Install dependencies:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
+```shell
+yarn
+```
+or
+```shell
+npm install
+```
 
+3. Run dev server:
+
+```shell
+yarn start
+```
+or
+```shell
+npm start
+```
+
+### Tests
+
+1. Run tests
+
+```shell
+yarn test
+```
+or
+```shell
+npm test
+```
