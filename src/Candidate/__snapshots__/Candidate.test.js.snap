@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders and match snapshot 1`] = `
+<div
+  className="Candidate"
+>
+  <section
+    className="Candidate__left"
+  >
+    <img
+      alt="Candidate"
+      className="Candidate__image"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFWfkA6fPozy8qlbL8q282B2jWo10s-UK2bYFLv1b_v32r5TAF"
+    />
+  </section>
+  <section
+    className="Candidate__center"
+  >
+    <div
+      className="CandidateInfo"
+    >
+      <h3>
+        Raoul Marquardt
+         
+        <span
+          className="CandidateInfo__pill CandidateInfo__pill--new"
+        >
+          Novo essa semana
+        </span>
+      </h3>
+      <h4>
+        Chief Security Representative
+      </h4>
+      <div
+        className="CandidateInfo__item"
+      >
+        <img
+          alt="Work icon"
+          className="icon"
+          src="work-icn.svg"
+        />
+        Thompson, Hintz and Walker, Aufderhar, Goldner and Dach, Predovic, Gutkowski and Lubowitz
+      </div>
+      <div
+        className="CandidateInfo__item"
+      >
+        <img
+          alt="Study icon"
+          className="icon"
+          src="study-icn.svg"
+        />
+        Kentucky
+      </div>
+      <div
+        className="CandidateInfo__item"
+      >
+        <img
+          alt="Location icon"
+          className="icon"
+          src="location-icn.svg"
+        />
+        <span>
+          Disposto a trabalhar em: 
+        </span>
+        Lake Bridgette, Abeton
+      </div>
+      <div
+        className="CandidateInfo__item"
+      >
+        <img
+          alt="Skill icon"
+          className="icon"
+          src="skills-icn.svg"
+        />
+        <span>
+          Principais habilidades: 
+        </span>
+        <span
+          className="CandidateInfo__pill CandidateInfo__pill--skill"
+        >
+          Creative
+        </span>
+        <span
+          className="CandidateInfo__pill CandidateInfo__pill--skill"
+        >
+          Solutions
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    className="Candidate__right"
+  >
+    <div
+      className="CandidateActions"
+    >
+      <button
+        className="CandidateActions__button"
+        onClick={[Function]}
+      >
+        <img
+          src="star2.svg"
+        />
+      </button>
+      <div
+        className="CandidateActions__popover-wrapper"
+      >
+        <button
+          className="CandidateActions__button"
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+        >
+          <img
+            src="dots.svg"
+          />
+        </button>
+        <div
+          className="CandidateActions__popover-button"
+        >
+          <button
+            className="CandidateActions__button CandidateActions__button--popover"
+            onClick={[Function]}
+            onMouseOut={[Function]}
+            onMouseOver={[Function]}
+          >
+            Remover
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with favorite false 1`] = `
+<div
+  className="CandidateActions"
+>
+  <button
+    className="CandidateActions__button"
+    onClick={[Function]}
+  >
+    <img
+      src="starfilled2.svg"
+    />
+  </button>
+  <div
+    className="CandidateActions__popover-wrapper"
+  >
+    <button
+      className="CandidateActions__button"
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+    >
+      <img
+        src="dots.svg"
+      />
+    </button>
+    <div
+      className="CandidateActions__popover-button"
+    >
+      <button
+        className="CandidateActions__button CandidateActions__button--popover"
+        onClick={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+      >
+        Remover
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly with favorite true 1`] = `
+<div
+  className="CandidateActions"
+>
+  <button
+    className="CandidateActions__button"
+    onClick={[Function]}
+  >
+    <img
+      src="starfilled2.svg"
+    />
+  </button>
+  <div
+    className="CandidateActions__popover-wrapper"
+  >
+    <button
+      className="CandidateActions__button"
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+    >
+      <img
+        src="dots.svg"
+      />
+    </button>
+    <div
+      className="CandidateActions__popover-button"
+    >
+      <button
+        className="CandidateActions__button CandidateActions__button--popover"
+        onClick={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+      >
+        Remover
+      </button>
+    </div>
+  </div>
+</div>
+`;

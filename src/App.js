@@ -15,16 +15,7 @@ class App extends Component {
   }
 
   componentWillMount() {
-    //fetch candidates
-    fetch(this.url, {
-      method: 'GET'
-    }).then(res => res.json())
-    .then(response => {
-      this._setCandidates(response);
-    })
-    .catch(error => {
-      console.log(error);
-    });
+    this._fetchCandidates();
   }
   
   render() {
@@ -42,6 +33,18 @@ class App extends Component {
         </div>
       </div>
     );
+  }
+
+  _fetchCandidates() {
+    fetch(this.url, {
+      method: 'GET'
+    }).then(res => res.json())
+    .then(response => {
+      this._setCandidates(response);
+    })
+    .catch(error => {
+      console.log(error);
+    });
   }
 
   _setCandidates(candidates) {

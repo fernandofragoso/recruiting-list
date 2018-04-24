@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with less than 3 cities and new this week 1`] = `null`;
+
+exports[`renders correctly with more than 3 cities 1`] = `null`;
