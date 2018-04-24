@@ -8,10 +8,10 @@
 2. Install dependencies:
 
 ```shell
-yarn
-```
+yarn 
+
 or
-```shell
+
 npm install
 ```
 
@@ -19,9 +19,9 @@ npm install
 
 ```shell
 yarn start
-```
+
 or
-```shell
+
 npm start
 ```
 
@@ -31,8 +31,8 @@ npm start
 
 ```shell
 yarn test
-```
+
 or
-```shell
+
 npm test
 ```
